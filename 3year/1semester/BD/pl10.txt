@@ -1,0 +1,45 @@
+--- a
+db.restaurants.find()
+
+--- b
+db.restaurants.find({restaurant_id:1, name: 1, borough:1, cuisine: 1})
+
+--- c
+db.restaurants.find({borough:"Bronx"})
+
+--- d
+db.restaurants.find({"grades.score":{$gte: 75, $lte: 100}})
+
+
+--- e
+db.restaurants.find({name: {$regex: '.er$'}, borough: "Queens"}, {id:1, name:1, borough:1, cuisine: 1})
+
+--- f
+db.restaurants.find({"grades.score": {$lte: 5}},{id:1, name: 1, score: 1} )
+
+
+--- g
+db.restaurants.find({cuisine: "Bakery"}).sort({"grades.score":-1})
+
+
+--- h
+db.restaurants.find({"address.coord": null})
+
+
+--- i
+db.restaurants.find({cuisine: "American", $or: [ {borough: "Queens", borough: "Brooklyn", borough: "State Island"}]}, {name:1, coord: 1}) ???
+
+
+--- j
+
+
+
+--- 2
+db.restaurants.update({borough: "Queens", cuisine: "American"},{$set: {cuisine: "Primer American Food"}}, {multi: true})
+
+
+--- 3
+db.restaurants.insert({name: "copo 1/2"})
+
+--- 4
+db.restaurants.remove({name: "copo 1/2"})

@@ -1,0 +1,18 @@
+//1
+MATCH(mov: Movie {title: "The Return of Jedi"})-[:ACTED_IN]->(actors) RETURN mov,actors
+
+//2
+MATCH (act: Person)-[:ACTED_IN]->(m: Movie) with act, count(m) as movie_count where movie_count >= 5 return act, movie_count order by movie_count DESC
+
+//3
+MATCH(act: Person)-[:DIRECTED]->() with DISTINCT act MATCH(act)-[:DIRECTED]->(m) return act, count(m) as movie_directed_count
+
+//4
+CREATE (FilipeM: Person {name: 'Filipe Monteiro', born:1998})
+CREATE (InesM: Person {name: 'Inês Martins', born:1998})
+CREATE(MovieT: Movie {title: "Teste", tagline: "query teste", release: 2018})
+MATCH (a: Person),(m: Movie) where a.name = "Filipe Monteiro" and m.title = "Teste" CREATE (a)-[:ACTED_IN]->(m)
+MATCH (a: Person),(m: Movie) where a.name = "Inês Martins" and m.title = "Teste" CREATE (a)-[:ACTED_IN]->(m)
+
+//5
+MATCH (m: Movie {title: "Teste"}) detach delete m

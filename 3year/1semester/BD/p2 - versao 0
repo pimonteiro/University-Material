@@ -1,0 +1,22 @@
+p2 - versao 0
+
+p3 - Foi enviada a um débito de 1Mb/s mas a place de rede suportava débitos maiores.
+
+
+
+p14 - ??
+
+p15 - Neste caso, o router para além de AP, é o ponto de ligação com o sistema de distribuição
+	MAC STA: d8:a2:5e:71:41:a1
+	MAC AP: bc:14:01:af:b1:98	
+	MAC Router: bc:14:01:af:b1:98
+
+p16 - Esta trama está a ser enviada da STA para o sistema de distribuição através do AP.
+
+p17 - 8, 9, 11, 12, 13
+
+1000
+1001
+1011
+1100
+1101
