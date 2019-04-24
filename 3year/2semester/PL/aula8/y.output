@@ -1,0 +1,223 @@
+Grammar
+
+    0 $accept: Turma $end
+
+    1 Turma: ID '{' Alunos '}'
+
+    2 Alunos: Aluno ';'
+    3       | Alunos '\n' Aluno ';'
+
+    4 Aluno: CodA STRING '(' Notas ')'
+
+    5 CodA: ID
+
+    6 Notas: Nota
+    7      | Notas ',' Nota
+
+    8 Nota: NUM
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'\n' (10) 3
+'(' (40) 4
+')' (41) 4
+',' (44) 7
+';' (59) 2 3
+'{' (123) 1
+'}' (125) 1
+error (256)
+ID (258) 1 5
+STRING (259) 4
+NUM (260) 8
+
+
+Nonterminals, with rules where they appear
+
+$accept (13)
+    on left: 0
+Turma (14)
+    on left: 1, on right: 0
+Alunos (15)
+    on left: 2 3, on right: 1 3
+Aluno (16)
+    on left: 4, on right: 2 3
+CodA (17)
+    on left: 5, on right: 4
+Notas (18)
+    on left: 6 7, on right: 4 7
+Nota (19)
+    on left: 8, on right: 6 7
+
+
+State 0
+
+    0 $accept: . Turma $end
+
+    ID  shift, and go to state 1
+
+    Turma  go to state 2
+
+
+State 1
+
+    1 Turma: ID . '{' Alunos '}'
+
+    '{'  shift, and go to state 3
+
+
+State 2
+
+    0 $accept: Turma . $end
+
+    $end  shift, and go to state 4
+
+
+State 3
+
+    1 Turma: ID '{' . Alunos '}'
+
+    ID  shift, and go to state 5
+
+    Alunos  go to state 6
+    Aluno   go to state 7
+    CodA    go to state 8
+
+
+State 4
+
+    0 $accept: Turma $end .
+
+    $default  accept
+
+
+State 5
+
+    5 CodA: ID .
+
+    $default  reduce using rule 5 (CodA)
+
+
+State 6
+
+    1 Turma: ID '{' Alunos . '}'
+    3 Alunos: Alunos . '\n' Aluno ';'
+
+    '}'   shift, and go to state 9
+    '\n'  shift, and go to state 10
+
+
+State 7
+
+    2 Alunos: Aluno . ';'
+
+    ';'  shift, and go to state 11
+
+
+State 8
+
+    4 Aluno: CodA . STRING '(' Notas ')'
+
+    STRING  shift, and go to state 12
+
+
+State 9
+
+    1 Turma: ID '{' Alunos '}' .
+
+    $default  reduce using rule 1 (Turma)
+
+
+State 10
+
+    3 Alunos: Alunos '\n' . Aluno ';'
+
+    ID  shift, and go to state 5
+
+    Aluno  go to state 13
+    CodA   go to state 8
+
+
+State 11
+
+    2 Alunos: Aluno ';' .
+
+    $default  reduce using rule 2 (Alunos)
+
+
+State 12
+
+    4 Aluno: CodA STRING . '(' Notas ')'
+
+    '('  shift, and go to state 14
+
+
+State 13
+
+    3 Alunos: Alunos '\n' Aluno . ';'
+
+    ';'  shift, and go to state 15
+
+
+State 14
+
+    4 Aluno: CodA STRING '(' . Notas ')'
+
+    NUM  shift, and go to state 16
+
+    Notas  go to state 17
+    Nota   go to state 18
+
+
+State 15
+
+    3 Alunos: Alunos '\n' Aluno ';' .
+
+    $default  reduce using rule 3 (Alunos)
+
+
+State 16
+
+    8 Nota: NUM .
+
+    $default  reduce using rule 8 (Nota)
+
+
+State 17
+
+    4 Aluno: CodA STRING '(' Notas . ')'
+    7 Notas: Notas . ',' Nota
+
+    ')'  shift, and go to state 19
+    ','  shift, and go to state 20
+
+
+State 18
+
+    6 Notas: Nota .
+
+    $default  reduce using rule 6 (Notas)
+
+
+State 19
+
+    4 Aluno: CodA STRING '(' Notas ')' .
+
+    $default  reduce using rule 4 (Aluno)
+
+
+State 20
+
+    7 Notas: Notas ',' . Nota
+
+    NUM  shift, and go to state 16
+
+    Nota  go to state 21
+
+
+State 21
+
+    7 Notas: Notas ',' Nota .
+
+    $default  reduce using rule 7 (Notas)

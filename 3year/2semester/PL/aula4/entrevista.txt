@@ -1,0 +1,14 @@
+Eu = Pedro Henriques.
+Ele = Joao Costa Dias.
+
+Eu: Bom dia, como se chama?
+Ele: Ah eu chamo-me Pedro mas ele e Diogo.
+Eu: E de onde ve o Pedro?
+Ele: Eu venho do Porto.
+Eu: Gosta do entrudo chocalheiro?
+ele: Sim gosto muito, acho que e uma tradiçao a preservar.
+
+Ele = Joana Pereira.
+Eu: Bom dia, como se chama?
+Ele: Ah eu chamo me Joana mas ele é Diogo.
+
