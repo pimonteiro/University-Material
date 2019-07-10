@@ -1,4 +1,4 @@
-The system is: Linux - 4.15.0-45-generic - x86_64
+The system is: Linux - 4.15.0-47-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ef773/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ef773.dir/build.make CMakeFiles/cmTC_ef773.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ef773.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ef773.dir/testCCompiler.c.o   -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_ef773
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef773.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_ef773.dir/testCCompiler.c.o  -o cmTC_ef773 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bf70c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf70c.dir/build.make CMakeFiles/cmTC_bf70c.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf70c.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bf70c.dir/testCCompiler.c.o   -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_bf70c
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf70c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_bf70c.dir/testCCompiler.c.o  -o cmTC_bf70c 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4fa3d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4fa3d.dir/build.make CMakeFiles/cmTC_4fa3d.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o   -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_4fa3d
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fa3d.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o  -o cmTC_4fa3d 
+Run Build Command:"/usr/bin/make" "cmTC_20553/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20553.dir/build.make CMakeFiles/cmTC_20553.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o   -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_20553
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20553.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o  -o cmTC_20553 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4fa3d' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0fvwT2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4fa3d /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4fa3d' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20553' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM03CCP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_20553 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20553' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4fa3d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4fa3d.dir/build.make CMakeFiles/cmTC_4fa3d.dir/build]
-  ignore line: [make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o   -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_4fa3d]
-  ignore line: [/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fa3d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o  -o cmTC_4fa3d ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_20553/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_20553.dir/build.make CMakeFiles/cmTC_20553.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o   -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_20553]
+  ignore line: [/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20553.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o  -o cmTC_20553 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4fa3d' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0fvwT2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4fa3d /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20553' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM03CCP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_20553 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc0fvwT2.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccM03CCP.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4fa3d] ==> ignore
+    arg [cmTC_20553] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_4fa3d.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_20553.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -157,17 +157,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9948/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9948.dir/build.make CMakeFiles/cmTC_a9948.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a9948.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a9948.dir/feature_tests.c.o   -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a9948
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9948.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_a9948.dir/feature_tests.c.o  -o cmTC_a9948 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_09257/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09257.dir/build.make CMakeFiles/cmTC_09257.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09257.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_09257.dir/feature_tests.c.o   -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_09257
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09257.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_09257.dir/feature_tests.c.o  -o cmTC_09257 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,17 +177,17 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c6996/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c6996.dir/build.make CMakeFiles/cmTC_c6996.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6996.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c6996.dir/feature_tests.c.o   -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c6996
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6996.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c6996.dir/feature_tests.c.o  -o cmTC_c6996 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fa64d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa64d.dir/build.make CMakeFiles/cmTC_fa64d.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa64d.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_fa64d.dir/feature_tests.c.o   -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fa64d
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa64d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_fa64d.dir/feature_tests.c.o  -o cmTC_fa64d 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,17 +197,17 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_86749/fast"
-/usr/bin/make -f CMakeFiles/cmTC_86749.dir/build.make CMakeFiles/cmTC_86749.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_86749.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_86749.dir/feature_tests.c.o   -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_86749
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86749.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_86749.dir/feature_tests.c.o  -o cmTC_86749 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bfc83/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bfc83.dir/build.make CMakeFiles/cmTC_bfc83.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bfc83.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_bfc83.dir/feature_tests.c.o   -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bfc83
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc83.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_bfc83.dir/feature_tests.c.o  -o cmTC_bfc83 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -215,30 +215,30 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8a017/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8a017.dir/build.make CMakeFiles/cmTC_8a017.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8a017.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_8a017.dir/testCXXCompiler.cxx.o -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_8a017
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a017.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_8a017.dir/testCXXCompiler.cxx.o  -o cmTC_8a017 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_77b84/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77b84.dir/build.make CMakeFiles/cmTC_77b84.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_77b84.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_77b84.dir/testCXXCompiler.cxx.o -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_77b84
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b84.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_77b84.dir/testCXXCompiler.cxx.o  -o cmTC_77b84 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_10cfa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_10cfa.dir/build.make CMakeFiles/cmTC_10cfa.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_10cfa
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10cfa.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_10cfa 
+Run Build Command:"/usr/bin/make" "cmTC_3a3f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a3f2.dir/build.make CMakeFiles/cmTC_3a3f2.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_3a3f2
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a3f2.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3a3f2 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -250,24 +250,24 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_10cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVG3Pcn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_10cfa /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_10cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3a3f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBmcTbj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3a3f2 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3a3f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_10cfa/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_10cfa.dir/build.make CMakeFiles/cmTC_10cfa.dir/build]
-  ignore line: [make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_10cfa]
-  ignore line: [/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10cfa.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_10cfa ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3a3f2/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3a3f2.dir/build.make CMakeFiles/cmTC_3a3f2.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o -c /home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_3a3f2]
+  ignore line: [/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a3f2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3a3f2 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_10cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVG3Pcn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_10cfa /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3a3f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBmcTbj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3a3f2 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccVG3Pcn.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccBmcTbj.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_10cfa] ==> ignore
+    arg [cmTC_3a3f2] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_10cfa.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_3a3f2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -342,17 +342,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d2b0a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d2b0a.dir/build.make CMakeFiles/cmTC_d2b0a.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d2b0a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_d2b0a.dir/feature_tests.cxx.o -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d2b0a
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2b0a.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_d2b0a.dir/feature_tests.cxx.o  -o cmTC_d2b0a 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_44258/fast"
+/usr/bin/make -f CMakeFiles/cmTC_44258.dir/build.make CMakeFiles/cmTC_44258.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_44258.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_44258.dir/feature_tests.cxx.o -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_44258
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44258.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_44258.dir/feature_tests.cxx.o  -o cmTC_44258 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -415,17 +415,17 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f94c7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f94c7.dir/build.make CMakeFiles/cmTC_f94c7.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f94c7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_f94c7.dir/feature_tests.cxx.o -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f94c7
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f94c7.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_f94c7.dir/feature_tests.cxx.o  -o cmTC_f94c7 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9f79d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f79d.dir/build.make CMakeFiles/cmTC_9f79d.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f79d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_9f79d.dir/feature_tests.cxx.o -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9f79d
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f79d.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_9f79d.dir/feature_tests.cxx.o  -o cmTC_9f79d 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -488,17 +488,17 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06965/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06965.dir/build.make CMakeFiles/cmTC_06965.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06965.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_06965.dir/feature_tests.cxx.o -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_06965
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06965.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_06965.dir/feature_tests.cxx.o  -o cmTC_06965 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ef5e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef5e2.dir/build.make CMakeFiles/cmTC_ef5e2.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef5e2.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_ef5e2.dir/feature_tests.cxx.o -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ef5e2
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef5e2.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_ef5e2.dir/feature_tests.cxx.o  -o cmTC_ef5e2 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -561,17 +561,17 @@ make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/C
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c5e44/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c5e44.dir/build.make CMakeFiles/cmTC_c5e44.dir/build
-make[1]: Entering directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c5e44.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_c5e44.dir/feature_tests.cxx.o -c /home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c5e44
-/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5e44.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c5e44.dir/feature_tests.cxx.o  -o cmTC_c5e44 
-make[1]: Leaving directory '/home/pimonteiro/Documents/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_3fb18/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3fb18.dir/build.make CMakeFiles/cmTC_3fb18.dir/build
+make[1]: Entering directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3fb18.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_3fb18.dir/feature_tests.cxx.o -c /home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3fb18
+/home/pimonteiro/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fb18.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_3fb18.dir/feature_tests.cxx.o  -o cmTC_3fb18 
+make[1]: Leaving directory '/home/pimonteiro/repos/University-Material/3year/2semester/CG/P3/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

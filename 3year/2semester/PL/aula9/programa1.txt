@@ -1,0 +1,14 @@
+VAR
+    a : integer;
+    b : integer;
+    c : integer
+CODE
+    read(b);
+    a = b + 2;
+    IF(a > 2){
+        c = 1;
+    } ELSE {
+        c = 0;
+    }
+    print(c)
+END

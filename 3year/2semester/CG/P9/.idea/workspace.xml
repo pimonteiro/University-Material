@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="class10" targetName="class10" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9745169f-5807-4142-b10d-fb29e770f555" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../P3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/P3.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/class3.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/class3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/class3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P3/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P3/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/P4.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/class4.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/class4.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/class4.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P4/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../P4/main.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="201" selection-start-line="201" selection-end-line="201" selection-end-column="41" />
+              <folding>
+                <element signature="e#68#85#0" expanded="true" />
+                <element signature="e#171#191#0" expanded="true" />
+                <element signature="e#2089#2194#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GL_ARRAY_BUFFER</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-1" />
+    <option name="width" value="959" />
+    <option name="height" value="1052" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="class10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P9" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="class10" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="class10" TARGET_NAME="class10" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="class10" RUN_TARGET_NAME="class10">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9745169f-5807-4142-b10d-fb29e770f555" name="Default Changelist" comment="" />
+      <created>1556619446461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556619446461</updated>
+      <workItem from="1556619449339" duration="5031000" />
+      <workItem from="1556637894544" duration="1889000" />
+      <workItem from="1556640842837" duration="2785000" />
+      <workItem from="1556646275321" duration="976000" />
+      <workItem from="1556647563136" duration="2669000" />
+      <workItem from="1556651593676" duration="881000" />
+      <workItem from="1556658175285" duration="129000" />
+      <workItem from="1556812837590" duration="1158000" />
+      <workItem from="1556814673627" duration="210000" />
+      <workItem from="1556876349816" duration="179000" />
+      <workItem from="1556876910649" duration="63000" />
+      <workItem from="1556877999477" duration="3195000" />
+      <workItem from="1556987688338" duration="1722000" />
+      <workItem from="1557235734587" duration="2155000" />
+      <workItem from="1557414326637" duration="16000" />
+      <workItem from="1557744707288" duration="2088000" />
+      <workItem from="1557749154498" duration="2777000" />
+      <workItem from="1557844448329" duration="237000" />
+      <workItem from="1557848495997" duration="999000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="29159000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19797225" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32938644" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20990312" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32938644" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.32938644" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/relva.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terreno.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="69" selection-start-line="65" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="201" selection-start-line="201" selection-end-line="201" selection-end-column="41" />
+          <folding>
+            <element signature="e#68#85#0" expanded="true" />
+            <element signature="e#171#191#0" expanded="true" />
+            <element signature="e#2089#2194#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

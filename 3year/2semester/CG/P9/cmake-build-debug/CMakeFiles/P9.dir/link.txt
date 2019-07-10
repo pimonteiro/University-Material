@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/P9.dir/main.cpp.o  -o P9 

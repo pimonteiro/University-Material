@@ -209,6 +209,9 @@ void renderScene(void) {
     glVertexPointer(3,GL_FLOAT,0,0);
     glDrawArrays(GL_TRIANGLES,0,dim*3);
 
+    glBindBuffer(GL_ARRAY_BUFFER, buffers[1]);
+
+
     frame++;
     int time = glutGet(GLUT_ELAPSED_TIME);
     if (time - timebase > 1000){
