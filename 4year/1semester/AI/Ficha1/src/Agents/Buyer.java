@@ -1,3 +1,5 @@
+package Agents;
+
 import jade.core.*;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.TickerBehaviour;
