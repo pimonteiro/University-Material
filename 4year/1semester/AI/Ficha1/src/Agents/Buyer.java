@@ -3,11 +3,18 @@ package Agents;
 import jade.core.*;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.TickerBehaviour;
+import jade.domain.DFService;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 
 import java.util.Random;
 
 public class Buyer extends Agent{
+
+    private AID[] known_agents;
+
     public void setup(){
         super.setup();
         // Initializations that the Agent require
@@ -15,17 +22,31 @@ public class Buyer extends Agent{
         this.addBehaviour(new TickerBehaviour(this, 1000) {
             @Override
             protected void onTick() {
-                AID receiver= new AID();
-                receiver.setLocalName("seller");
-                ACLMessage msg = new ACLMessage(ACLMessage.REQUEST);
+                DFAgentDescription template = new DFAgentDescription();
+                ServiceDescription sd = new ServiceDescription();
+                sd.setType("market");
+                template.addServices(sd);
 
-                int i = new Random().nextInt(Seller.items.size());
-                String it = Seller.items.keySet().toArray()[i].toString();
-                msg.setContent(it);
-                msg.setConversationId(""+System.currentTimeMillis());
-                msg.addReceiver(receiver);
-                myAgent.send(msg);
-                System.out.println("Buying " + it + ".");
+                DFAgentDescription[] results;
+                try{
+                    results = DFService.search(this.myAgent,template);
+                    known_agents = new AID[results.length];
+                    for(int j = 0; j < results.length; j++){
+                        known_agents[j] = results[j].getName();
+
+                        ACLMessage msg = new ACLMessage(ACLMessage.REQUEST);
+
+                        int i = new Random().nextInt(Seller.items.size());
+                        String it = Seller.items.keySet().toArray()[i].toString();
+                        msg.setContent(it);
+                        msg.setConversationId(""+System.currentTimeMillis());
+                        msg.addReceiver(known_agents[j]);
+                        myAgent.send(msg);
+                        System.out.println("Buying " + it + ".");
+                    }
+                } catch (FIPAException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

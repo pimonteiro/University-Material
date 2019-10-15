@@ -3,6 +3,10 @@ package Agents;
 import jade.core.*;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.TickerBehaviour;
+import jade.domain.DFService;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 
 import java.util.Date;
@@ -22,6 +26,19 @@ public class Seller extends Agent{
 
     public void setup(){
         super.setup();
+
+        DFAgentDescription dfd = new DFAgentDescription();
+        dfd.setName(getAID());
+        ServiceDescription sd = new ServiceDescription();
+        sd.setType("market");
+        sd.setName("seller");
+        dfd.addServices(sd);
+
+        try {
+            DFService.register(this,dfd);
+        } catch (FIPAException e){
+            e.printStackTrace();
+        }
 
         // Initializations that the Agent require
         System.out.println("Hello! Agent " + getAID().getName() + " is ready.");
@@ -61,11 +78,14 @@ public class Seller extends Agent{
 
     public void takeDown(){
         super.takeDown();
-        System.out.println("Agent " + getAID().getName() + " terminating.");
-    }
 
-    public int getProfit(){
-        return this.profit;
+        try {
+            DFService.deregister(this);
+        } catch (FIPAException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Agent " + getAID().getName() + " terminating.");
     }
 
     public void updateProfit(String item){
