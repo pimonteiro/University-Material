@@ -1,0 +1,9 @@
+db.filmes.aggregate([{$unwind: "$cast"}, {$group: {_id: "$cast", filmes: {push: "$title"}, contador: {$sum: 1}}}, {sort: {contador: -1}}, {$match: {contador: 5}}]).pretty()
+
+
+//Listar generos de filmes e indicar quantos há de cada um;
+db.filmes.aggregate([{$unwind: "$genres"}, {$group: {_id: "genres", filmes: {$push: "$title"}, count: {$sum: 1}}}])
+
+//Quais os títulos dos filmes do genero Drama;
+
+//Que atores participaram em filmes do generos Comedy;

@@ -1,0 +1,12 @@
+GET
+    /filmes
+    /files/:idFilme             -- req.params.idFilme --
+
+POST
+    /filmes                     -- req.body --
+
+DELETE
+    /filmes/:idFilme            -- req.params.idFilme --
+
+PUT
+    /filmes/:idFilme            -- req.params.idFilme --
