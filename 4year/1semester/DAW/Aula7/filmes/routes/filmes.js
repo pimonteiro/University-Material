@@ -15,4 +15,22 @@ router.get('/:idFilme', function(req, res) {
     .catch(erro => res.status(500).jsonp(erro))
 })
 
+router.delete('/:idFilme', function(req, res){
+  Filmes.remover(req.params.idFilme)
+    .then(dados => res.jsonp(dados))
+    .catch(erro => res.status(500).jsonp(erro))
+})
+
+router.post('/', function(req, res){
+  Filmes.adicionar(req.body)
+    .then(dados => res.jsonp(dados))
+    .catch(erro => res.status(500).jsonp(erro))
+})
+
+router.put('/:idFilme', function(req, res){
+  Filmes.atualizar(req.params.idFilme, req.body)
+    .then(dados => res.jsonp(dados))
+    .catch(erro => res.status(500).jsonp(erro))
+})
+
 module.exports = router;

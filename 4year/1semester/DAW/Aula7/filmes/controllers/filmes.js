@@ -32,3 +32,32 @@ Filmes.agregar = fid =>{
         .findOne({_id: fid})
         .exec()
 }
+
+Filmes.remover = fid => {
+    return Filme
+        .findByIdAndRemove({_id: fid})
+        .exec()
+}
+
+Filmes.adicionar = campos => {
+    var new_filme = new Filme({ 
+        title: campos['title'],
+        year: campos['year'],
+        cast: campos['cast'],
+        genres: campos['genres']})
+    return Filme
+        .create(new_filme)
+}
+
+Filmes.atualizar = (fid, campos) =>{
+    return Filme
+        .findOneAndUpdate({_id: fid}, {
+            $set: {
+                title: campos['title'],
+                year: campos['year'],
+                cast: campos['cast'],
+                genres: campos['genres']       
+            }
+        })
+        .exec()
+}
