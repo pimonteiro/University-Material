@@ -27,3 +27,15 @@ module.exports.remover = id => {
     return Aluno
         .deleteOne({_id: id})
 }
+
+module.exports.atualizar = aluno => {
+    var novo = new Aluno(aluno)
+    return Aluno
+        .findOneAndUpdate({_id: aluno._id}, {
+            $set: {
+                nome: novo.nome,
+                curso: novo.curso,
+            }
+        })
+        .exec()
+}

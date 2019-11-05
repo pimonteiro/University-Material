@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .w3-container
+    h1 Gestão de Alunos
+    ul.w3-ul
+      li
+        a(href="http://localhost:3000/alunos") Listar Alunos
+      li
+        a(href="http://localhost:3000/alunos/inserir") Inserir Alunos

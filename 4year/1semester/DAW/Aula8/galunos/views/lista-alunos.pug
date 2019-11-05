@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Lista de Alunos de DAW2019
+        table.w3-table-all
+            tr
+                th Identificador
+                th Nome
+                th Curso
+                th Operações
+            each aluno in lista
+                tr
+                    td=aluno._id
+                    td=aluno.nome
+                    td=aluno.curso
+                    td
+                        button.w3-button.w3-circle(onclick="apagaAluno('" + aluno._id + "')") Apagar
+                        a(href="/alunos/editar/" + aluno._id) Editar
+        address
+            a(href="http://localhost:3000/") Homepage

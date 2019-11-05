@@ -22,6 +22,12 @@ router.post('/alunos', function(req, res, next) {
         .catch(erro => res.status(500).jsonp(erro))
 });  
 
+router.put('/alunos', function(req, res, next){
+  Alunos.atualizar(req.body)
+      .then(dados => res.jsonp(dados))
+      .catch(erro => res.status(500).jsonp(erro))
+})
+
 router.delete('/alunos/:idAluno', function(req, res, next) {
     Alunos.remover(req.params.idAluno)
       .then(dados => res.jsonp(dados))

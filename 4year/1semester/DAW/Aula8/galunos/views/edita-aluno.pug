@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .w3-container
+    h1 Edição de um aluno
+    form.w3-container(action="/alunos/editar" method="post")
+        label Identificador
+        input.w3-input(type="text" name="_id" value=aluno._id readonly)
+        label Nome
+        input.w3-input(type="text" name="nome" value=aluno.nome)
+        label Curso
+        input.w3-input(type="text" name="curso" value=aluno.curso)
+        input.w3-input(type="submit" value="Enviar")
+    address
+        a(href="http://localhost:3000/") Homepage
