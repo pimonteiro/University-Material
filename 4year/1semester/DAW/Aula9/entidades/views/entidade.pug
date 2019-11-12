@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .w3-container
+    h1 Entidade
+    table.w3-table-all
+        tr
+            th ID
+            th Designação
+            th SIGLA
+            th SIOE
+            th Internacional
+            th Estado
+        tr
+            td=ent.id
+            td=ent.designacao
+            td=ent.sigla
+            td=ent.sioe
+            td=ent.internacional
+            td=ent.estado
+    h2 Intervenções Dono
+    table.w3-table-all
+        tr
+            th Código
+            th Título
+        each i in dono
+            tr
+                td=i.codigo
+                td=i.titulo
+    h2 Intervenções Participativas
+    table.w3-table-all
+        tr
+            th Código
+            th Título
+            th Tipo Par
+        each j in part
+            tr
+                td=j.codigo
+                td=j.titulo
+                td=j.tipoPar
+    address
+        a(href="http://localhost:3000/") Voltar Atrás

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Lista de Entidades
+        table.w3-table-all
+            tr
+                th ID
+                th Designação
+                th SIGLA
+                th SIOE
+                th Internacional
+                th Estado
+            each ent in lista
+                tr
+                    td=ent.id
+                    td
+                      a(href="http://localhost:3000/" + ent.id)=ent.designacao
+                    td=ent.sigla
+                    td=ent.sioe
+                    td=ent.internacional
+                    td=ent.estado
+        address
+            a(href="http://localhost:3000/") Homepage
