@@ -1,0 +1,4 @@
+JOB A converter.condor
+
+SCRIPT PRE A break.sh video10m.mp4
+SCRIPT POST A join.sh mp4 video10m720.mp4
