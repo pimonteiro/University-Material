@@ -1,0 +1,17 @@
+Universe = vanilla
+Executable = converter.sh
+Arguments = $(Process).mp4 720
+Log = logs/converter.$(Process).log
+Output = logs/converter.$(Process).out
+Error = logs/converter.$(Process).error
+
+should_transfer_files = yes
+when_to_transfer_output= ON_EXIT
+transfer_input_files = $(Process).mp4
+transfer_output_files = out$(Process).mp4.ts
+
+periodic_remove = (CommittedTime - CommittedSuspensionTime) > 150
+request_cpus = 1
+request_memory = 100 MB
+request_disk = 50 MB
+Queue 122
