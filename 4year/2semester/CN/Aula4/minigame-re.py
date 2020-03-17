@@ -96,7 +96,7 @@ class Agent:
         self.Q_values = {}
         for i in range(BOARD_ROWS):
             for j in range(BOARD_COLS):
-                self.Q_values[(i, j)] = {}
+                self.Q_values[(i, j)] = {} 
                 for a in self.actions:
                     self.Q_values[(i, j)][a] = 0  # Q value is a dict of dict
 
@@ -142,9 +142,17 @@ class Agent:
                         current_q_value = self.Q_values[s[0]][s[1]]
                         reward = current_q_value + self.lr * (self.gamma * reward - current_q_value)
                         self.Q_values[s[0]][s[1]] = round(reward, 3)
-                else:
-                    for s in reversed(self.states):
-                        
+                elif self.method == "Sarsa":
+                    j = 1
+                    self.states.reverse()
+                    while j < len(self.states):
+                        s_n = self.states[j]
+                        s_o = self.states[j-1]
+                        new_q_value = self.Q_values[s_n[0]][s_n[1]]
+                        old_q_value = self.Q_values[s_o[0]][s_o[1]]
+                        target = State(s_o).giveReward() + self.gamma * new_q_value - old_q_value
+                        self.Q_values[s_o[0]][s_o[1]] = round(old_q_value + self.lr * target,3)
+                        j += 1
                 self.reset()
                 i += 1
             else:
@@ -162,7 +170,7 @@ class Agent:
 
 
 if __name__ == "__main__":
-    ag = Agent()
+    ag = Agent(method="Sarsa")
     print("initial Q-values ... \n")
     print(ag.Q_values)
 
