@@ -1,0 +1,5 @@
+uma palavra outra palavra
+mais outra palavra tres vezes palavra
+
+linha em branco
+fim

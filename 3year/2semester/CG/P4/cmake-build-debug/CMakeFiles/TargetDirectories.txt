@@ -1,3 +1,0 @@
-/home/pimonteiro/repos/University-Material/3year/2semester/CG/P4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pimonteiro/repos/University-Material/3year/2semester/CG/P4/cmake-build-debug/CMakeFiles/class4.dir
-/home/pimonteiro/repos/University-Material/3year/2semester/CG/P4/cmake-build-debug/CMakeFiles/edit_cache.dir

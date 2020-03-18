@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "nome": "Filipe Monteiro",
+            "email": "filipe@gmail.com",
+            "password": "qwerty0"
+        },
+        {
+            "id": 1,
+            "nome": "Rogério Carvalho",
+            "email": "rogerio@gmail.com",
+            "password": "qwerty1"
+        },
+        {
+            "id": 2,
+            "nome": "Carina Félix",
+            "email": "carina@gmail.com",
+            "password": "qwerty2"
+        },
+        {
+            "id": 3,
+            "nome": "Leo Tonoz",
+            "email": "leo@gmail.com",
+            "password": "qwerty3"
+        }
+    ]
+}

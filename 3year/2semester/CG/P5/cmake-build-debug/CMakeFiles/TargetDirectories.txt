@@ -1,3 +1,0 @@
-/home/pimonteiro/Documents/CG/P5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pimonteiro/Documents/CG/P5/cmake-build-debug/CMakeFiles/class5.dir
-/home/pimonteiro/Documents/CG/P5/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -83,22 +83,19 @@ class State:
 
 class Agent:
 
-    def __init__(self, method="QLearning"):
+    def __init__(self):
         self.states = []
         self.actions = ["up", "down", "left", "right"]
         self.State = State()
         self.lr = 0.2
         self.gamma = 0.96
         self.exp_rate = 0.3
-        self.method = method
 
-        # initial Q values
-        self.Q_values = {}
+        # initial state reward
+        self.state_values = {}
         for i in range(BOARD_ROWS):
             for j in range(BOARD_COLS):
-                self.Q_values[(i, j)] = {} 
-                for a in self.actions:
-                    self.Q_values[(i, j)][a] = 0  # Q value is a dict of dict
+                self.state_values[(i, j)] = 0  # set initial value to 0
 
     def chooseAction(self):
         # choose action with most expected value
@@ -111,7 +108,7 @@ class Agent:
             # greedy action
             for a in self.actions:
                 # if the action is deterministic
-                nxt_reward = self.Q_values[self.State.state][a]
+                nxt_reward = self.state_values[self.State.nxtPosition(a)]
                 if nxt_reward >= mx_nxt_reward:
                     action = a
                     mx_nxt_reward = nxt_reward
@@ -133,32 +130,23 @@ class Agent:
                 # back propagate
                 reward = self.State.giveReward()
                 # explicitly assign end state to reward values
-                for a in self.actions:
-                    self.Q_values[self.State.state][a] = reward
+                self.state_values[self.State.state] = reward  # this is optional
                 print("Game End Reward", reward)
-
-                if self.method == "QLearning":
-                    for s in reversed(self.states):
-                        current_q_value = self.Q_values[s[0]][s[1]]
-                        reward = current_q_value + self.lr * (self.gamma * reward - current_q_value)
-                        self.Q_values[s[0]][s[1]] = round(reward, 3)
-                elif self.method == "Sarsa":
-                    j = 1
-                    self.states.reverse()
-                    while j < len(self.states):
-                        s_n = self.states[j]
-                        s_o = self.states[j-1]
-                        new_q_value = self.Q_values[s_n[0]][s_n[1]]
-                        old_q_value = self.Q_values[s_o[0]][s_o[1]]
-                        target = State(s_o).giveReward() + self.gamma * new_q_value - old_q_value
-                        self.Q_values[s_o[0]][s_o[1]] = round(old_q_value + self.lr * target,3)
-                        j += 1
+                self.states.append(self.State.state)
+                self.states.reverse()
+                j = 0
+                while j < len(self.states) - 1:
+                    tmpState = State(self.states[j])
+                    target = tmpState.giveReward() + self.gamma * self.state_values[self.states[j+1]] - self.state_values[self.states[j]]
+                    reward = self.state_values[self.states[j]] + self.lr * target
+                    self.state_values[self.states[j]] = round(reward, 3)
+                    j +=1
                 self.reset()
                 i += 1
             else:
                 action = self.chooseAction()
                 # append trace
-                self.states.append([self.State.state, action])
+                self.states.append(self.State.nxtPosition(action))
                 print("current position {} action {}".format(self.State.state, action))
                 # by taking the action, it reaches the next state
                 self.State = self.takeAction(action)
@@ -167,13 +155,17 @@ class Agent:
                 print("nxt state", self.State.state)
                 print("---------------------")
 
+    def showValues(self):
+        for i in range(0, BOARD_ROWS):
+            print('----------------------------------')
+            out = '| '
+            for j in range(0, BOARD_COLS):
+                out += str(self.state_values[(i, j)]).ljust(6) + ' | '
+            print(out)
+        print('----------------------------------')
 
 
 if __name__ == "__main__":
-    ag = Agent(method="Sarsa")
-    print("initial Q-values ... \n")
-    print(ag.Q_values)
-
-    ag.play(100)
-    print("latest Q-values ... \n")
-    print(ag.Q_values)
+    ag = Agent()
+    ag.play(50)
+    print(ag.showValues())
