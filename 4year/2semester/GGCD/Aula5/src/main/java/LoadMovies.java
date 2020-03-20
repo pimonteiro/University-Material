@@ -41,7 +41,7 @@ public class LoadMovies {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration conf = HBaseConfiguration.create();
-        conf.set("hbase.zookeeper.quorum","hbase"); //distribuited zoo
+        conf.set("hbase.zookeeper.quorum","zoo"); //distribuited zoo
          Connection conn = ConnectionFactory.createConnection(conf);
 
         Admin admin = conn.getAdmin();
@@ -60,7 +60,7 @@ public class LoadMovies {
         job.setOutputValueClass(Put.class);
 
         job.setInputFormatClass(TextInputFormat.class);
-        TextInputFormat.setInputPaths(job, "hdfs://namenode:9000/input/title.basics.tsv.gz");
+        TextInputFormat.setInputPaths(job, "hdfs://namenode:9000/input/title.basics.tsv");
 
         job.setOutputFormatClass(TableOutputFormat.class);
 
