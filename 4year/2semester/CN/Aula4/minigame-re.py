@@ -7,6 +7,7 @@ Created on Mon Mar 16 10:55:12 2020
 """
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 # global variables
 BOARD_ROWS = 3
@@ -14,8 +15,11 @@ BOARD_COLS = 4
 WIN_STATE = (0, 3)
 LOSE_STATE = (1, 3)
 START = (2, 0)
+NUM_EPISODES = 100
 DETERMINISTIC = True
 
+rewards1 = []
+rewards2 = []
 
 class State:
     def __init__(self, state=START):
@@ -27,11 +31,11 @@ class State:
 
     def giveReward(self):
         if self.state == WIN_STATE:
-            return 1
+            return 50
         elif self.state == LOSE_STATE:
-            return -1
+            return -50
         else:
-            return 0
+            return 1
 
     def isEndFunc(self):
         if (self.state == WIN_STATE) or (self.state == LOSE_STATE):
@@ -91,6 +95,7 @@ class Agent:
         self.gamma = 0.96
         self.exp_rate = 0.3
         self.method = method
+        self.allrewards = []
 
         # initial Q values
         self.Q_values = {}
@@ -135,7 +140,8 @@ class Agent:
                 # explicitly assign end state to reward values
                 for a in self.actions:
                     self.Q_values[self.State.state][a] = reward
-                print("Game End Reward", reward)
+                #print("Game End Reward", reward)
+                self.allrewards.append(reward)
 
                 if self.method == "QLearning":
                     for s in reversed(self.states):
@@ -159,21 +165,37 @@ class Agent:
                 action = self.chooseAction()
                 # append trace
                 self.states.append([self.State.state, action])
-                print("current position {} action {}".format(self.State.state, action))
+                #print("current position {} action {}".format(self.State.state, action))
                 # by taking the action, it reaches the next state
-                self.State = self.takeAction(action)
+                #self.State = self.takeAction(action)
                 # mark is end
                 self.State.isEndFunc()
-                print("nxt state", self.State.state)
-                print("---------------------")
+                #print("nxt state", self.State.state)
+                #print("---------------------")
 
 
 
 if __name__ == "__main__":
-    ag = Agent(method="Sarsa")
-    print("initial Q-values ... \n")
-    print(ag.Q_values)
 
-    ag.play(100)
+    print("QLearning")
+    ag = Agent()
+    ag.play(NUM_EPISODES)
+    rewards1 = ag.allrewards
+    
+    print("Sarsa")
+    ag = Agent(method="Sarsa")
+    ag.play(NUM_EPISODES)
+    rewards2 = ag.allrewards
+
+    plt.figure()
+    plt.plot(range(0,NUM_EPISODES), rewards1, label="QLearning")
+    plt.plot(range(0,NUM_EPISODES), rewards2, label="Sarsa")
+    plt.title("Reward values per episode")
+    plt.xlabel("Episode")
+    plt.ylabel("Reward")
+    plt.legend()
+    plt.show()
+
+
     print("latest Q-values ... \n")
     print(ag.Q_values)
