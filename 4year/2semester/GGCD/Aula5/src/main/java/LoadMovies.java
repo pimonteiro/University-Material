@@ -25,6 +25,8 @@ public class LoadMovies {
     public static class MapperMovies extends Mapper<LongWritable, Text, NullWritable, Put> {
         @Override
         protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException{
+            if(key.equals(new LongWritable(0)))
+                return;
             String[] fields = value.toString().split("\t");
             Put put = new Put(Bytes.toBytes(fields[0]));
             put.addColumn(Bytes.toBytes("Details"), Bytes.toBytes("TitleType"), Bytes.toBytes(fields[1]));
@@ -47,6 +49,7 @@ public class LoadMovies {
         Admin admin = conn.getAdmin();
         HTableDescriptor t = new HTableDescriptor(TableName.valueOf("movies"));
         t.addFamily(new HColumnDescriptor("Details"));
+        t.addFamily(new HColumnDescriptor("Cast"));
         admin.createTable(t);
         admin.close();
 
@@ -65,7 +68,7 @@ public class LoadMovies {
         job.setOutputFormatClass(TableOutputFormat.class);
 
         job.getConfiguration().set(TableOutputFormat.OUTPUT_TABLE, "movies");
-        TextOutputFormat.setOutputPath(job, new Path("hdfs://namenode:9000/out"));
+        TextOutputFormat.setOutputPath(job, new Path("hdfs://namenode:9000/guiao4/loadMovies"));
 
         job.waitForCompletion(true);
 
