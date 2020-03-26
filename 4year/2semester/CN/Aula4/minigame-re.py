@@ -8,188 +8,175 @@ Created on Mon Mar 16 10:55:12 2020
 
 import numpy as np
 import matplotlib.pyplot as plt
-
-# global variables
-BOARD_ROWS = 3
-BOARD_COLS = 4
-WIN_STATE = (0, 3)
-LOSE_STATE = (1, 3)
-START = (2, 0)
-NUM_EPISODES = 100
-DETERMINISTIC = True
+import random
 
 rewards1 = []
 rewards2 = []
 
-class State:
-    def __init__(self, state=START):
-        self.board = np.zeros([BOARD_ROWS, BOARD_COLS])
-        self.board[1, 1] = -1
-        self.state = state
-        self.isEnd = False
-        self.determine = DETERMINISTIC
-
-    def giveReward(self):
-        if self.state == WIN_STATE:
-            return 50
-        elif self.state == LOSE_STATE:
-            return -50
-        else:
-            return 1
-
-    def isEndFunc(self):
-        if (self.state == WIN_STATE) or (self.state == LOSE_STATE):
-            self.isEnd = True
-
-    def nxtPosition(self, action):
-        """
-        action: up, down, left, right
-        -------------
-        0 | 1 | 2| 3|
-        1 |
-        2 |
-        return next position
-        """
-        if self.determine:
-            if action == "up":
-                nxtState = (self.state[0] - 1, self.state[1])
-            elif action == "down":
-                nxtState = (self.state[0] + 1, self.state[1])
-            elif action == "left":
-                nxtState = (self.state[0], self.state[1] - 1)
-            else:
-                nxtState = (self.state[0], self.state[1] + 1)
-            # if next state legal
-            if (nxtState[0] >= 0) and (nxtState[0] <= 2):
-                if (nxtState[1] >= 0) and (nxtState[1] <= 3):
-                    if nxtState != (1, 1):
-                        return nxtState
-            return self.state
-
-    def showBoard(self):
-        self.board[self.state] = 1
-        for i in range(0, BOARD_ROWS):
-            print('-----------------')
-            out = '| '
-            for j in range(0, BOARD_COLS):
-                if self.board[i, j] == 1:
-                    token = '*'
-                if self.board[i, j] == -1:
-                    token = 'z'
-                if self.board[i, j] == 0:
-                    token = '0'
-                out += token + ' | '
-            print(out)
-        print('-----------------')
-
-
 # Agent of player
+Goal_reward = 100
+Penalizer_reward = -10
+Penalizer_movement = -1
+Wall_reward = 0
+
+UP = 0
+DOWN = 1
+LEFT = 2
+RIGHT = 3
+
+NUM_EPISODES = 70
+
+'''
+Matrix RF (States representation)
+---------------------
+| 0  | 1  | 2  | 3  |
+---------------------
+| 4  | X  | 6  | 7  |
+---------------------
+| 8  | 9  | 10 | 11 |
+---------------------
+'''
 
 class Agent:
 
-    def __init__(self, method="QLearning"):
-        self.states = []
+    def __init__(self, start=8, end=3, lr=0.2, gamma=0.96, exp_rate=0.3, epsilon=0.3, e_degradation=0.003):
         self.actions = ["up", "down", "left", "right"]
-        self.State = State()
-        self.lr = 0.2
-        self.gamma = 0.96
-        self.exp_rate = 0.3
-        self.method = method
+        self.start = start
+        self.lr = lr
+        self.gamma = gamma
         self.allrewards = []
+        self.end = end
+        self.Q_values = np.zeros((16,4))
+        self.state = start
+        self.epsilon=epsilon
+        self.e_degradation = e_degradation
 
-        # initial Q values
-        self.Q_values = {}
-        for i in range(BOARD_ROWS):
-            for j in range(BOARD_COLS):
-                self.Q_values[(i, j)] = {} 
-                for a in self.actions:
-                    self.Q_values[(i, j)][a] = 0  # Q value is a dict of dict
+        self.reward = np.array([[Wall_reward, Penalizer_movement, Wall_reward, Penalizer_reward],       # position (0,0) - State 0
+                   [Wall_reward, Wall_reward, Penalizer_movement, Penalizer_movement],                  # position (0,1) - State 1
+                   [Wall_reward, Penalizer_movement, Penalizer_movement, Goal_reward],                  # position (0,2) - State 2
+                   [Wall_reward, Penalizer_reward, Penalizer_movement, Wall_reward],                    # position (0,3) - State 3
+                   
+                   [Penalizer_movement, Penalizer_movement, Wall_reward, Wall_reward],                  # position (1,0) - State 4
+                   [Wall_reward, Wall_reward, Wall_reward, Wall_reward],                                # position (1,1) - State 5
+                   [Penalizer_movement, Penalizer_movement, Wall_reward, Penalizer_reward],             # position (1,2) - State 6
+                   [Goal_reward, Penalizer_movement, Penalizer_reward, Wall_reward],                    # position (1,3) - State 7
+                   
+                   [Penalizer_movement, Wall_reward, Wall_reward, Penalizer_movement],                  # position (2,0) - State 8
+                   [Wall_reward, Wall_reward, Penalizer_movement, Penalizer_movement],                  # position (2,1) - State 9
+                   [Penalizer_movement, Wall_reward, Penalizer_movement, Penalizer_movement],           # position (2,2) - State 10
+                   [Penalizer_reward, Wall_reward, Penalizer_movement, Wall_reward]])                   # position (2,3) - State 11
+                   
+        self.n_s = np.array([[-1,4,-1,1],   # position (0,0) - State 0
+                    [-1,-1,0,2],            # position (1,0) - State 1
+                    [-1,6,1,3],             # position (2,0) - State 2
+                    [-1,7,2,-1],            # position (3,0) - State 3
+                        
+                    [0,8,-1,-1],            # position (1,0) - State 4
+                    [1,9,4,6],              # position (1,1) - State 5
+                    [2,10,-1,7],            # position (1,2) - State 6
+                    [3,11,6,-1],            # position (1,3) - State 7
+                        
+                    [4,-1,-1,9],            # position (2,0) - State 8
+                    [-1,-1,8,10],           # position (2,1) - State 9
+                    [6,-1,9,11],            #  position (2,2) - State 10
+                    [7,-1,10,-1]])          # position (2,3) - State 11
+        
+        self.actions = np.array([[DOWN,RIGHT],            # position (0,0) - State 0
+                        [LEFT, RIGHT],      # position (0,1) - State 1
+                        [DOWN, LEFT, RIGHT],      # position (0,2) - State 2
+                        [DOWN, LEFT],             # position (0,3) - State 3
+                        
+                        [UP,DOWN],          # position (1,0) - State 4
+                        [],    # position (1,1) - State 5
+                        [UP,DOWN,RIGHT],    # position (1,2) - State 6
+                        [UP,DOWN,LEFT],          # position (1,3) - State 7
+                        
+                        [UP,RIGHT],         # position (2,0) - State 8
+                        [LEFT,RIGHT],    # position (2,1) - State 9
+                        [UP,LEFT,RIGHT],    # position (2,2) - State 10
+                        [UP,LEFT]])          # position (2,3) - State 11
 
-    def chooseAction(self):
-        # choose action with most expected value
-        mx_nxt_reward = 0
-        action = ""
+    def play_q_learning(self, rounds=15):
+        for _ in range(rounds):
+            round_reward = 0
+            self.state = self.start
+            while self.state != self.end:
+                Qx = -999
+                for a in self.actions[self.state]:
+                    if self.Q_values[self.state][a] > Qx:
+                        Qx = self.Q_values[self.state][a]
+                        act = a
+                next_state = self.n_s[self.state][act]
+                
+                next_values = []
+                for i in self.actions[next_state]:
+                    next_values.append(self.Q_values[next_state][i])
+                max_Q_value = max(next_values)
+                round_reward = round_reward + self.reward[self.state][act]
 
-        if np.random.uniform(0, 1) <= self.exp_rate:
-            action = np.random.choice(self.actions)
-        else:
-            # greedy action
-            for a in self.actions:
-                # if the action is deterministic
-                nxt_reward = self.Q_values[self.State.state][a]
-                if nxt_reward >= mx_nxt_reward:
-                    action = a
-                    mx_nxt_reward = nxt_reward
-        return action
+                # Update Q_Value_current_state_and_action_taken = Q_Value_current_state_and_action_taken + Discounted Reward [reward_of_action_taken + (discount_factor x max_q_value - Q_value_of_action_taken_in_current_position)]
+                self.Q_values[self.state][act] = self.Q_values[self.state][act] + self.lr * (self.reward[self.state][act] + self.gamma * max_Q_value - self.Q_values[self.state][act])
+                #print("Taking action ", act, " to state ", next_state.state)
+                # Save current position in Path list and update current_state
 
-    def takeAction(self, action):
-        position = self.State.nxtPosition(action)
-        return State(state=position)
+                self.state = next_state
 
-    def reset(self):
-        self.states = []
-        self.State = State()
+            self.allrewards.append(round_reward)
 
-    def play(self, rounds=10):
-        i = 0
-        while i < rounds:
-            # to the end of game back propagate reward
-            if self.State.isEnd:
-                # back propagate
-                reward = self.State.giveReward()
-                # explicitly assign end state to reward values
-                for a in self.actions:
-                    self.Q_values[self.State.state][a] = reward
-                #print("Game End Reward", reward)
-                self.allrewards.append(reward)
-
-                if self.method == "QLearning":
-                    for s in reversed(self.states):
-                        current_q_value = self.Q_values[s[0]][s[1]]
-                        reward = current_q_value + self.lr * (self.gamma * reward - current_q_value)
-                        self.Q_values[s[0]][s[1]] = round(reward, 3)
-                elif self.method == "Sarsa":
-                    j = 1
-                    self.states.reverse()
-                    while j < len(self.states):
-                        s_n = self.states[j]
-                        s_o = self.states[j-1]
-                        new_q_value = self.Q_values[s_n[0]][s_n[1]]
-                        old_q_value = self.Q_values[s_o[0]][s_o[1]]
-                        target = State(s_o).giveReward() + self.gamma * new_q_value - old_q_value
-                        self.Q_values[s_o[0]][s_o[1]] = round(old_q_value + self.lr * target,3)
-                        j += 1
-                self.reset()
-                i += 1
+    def play_sarsa_learning(self, rounds=25):
+        for _ in range(rounds):
+            round_reward = 0
+            self.state = self.start
+            random_value = random.random()
+            if random_value > self.epsilon:                        
+                Max_reward = [-999, -999, -999, -999]
+                for M in self.actions[self.state]:        
+                    Max_reward[M] = (self.Q_values[self.state][M])
+                act = np.argmax(Max_reward)       
             else:
-                action = self.chooseAction()
-                # append trace
-                self.states.append([self.State.state, action])
-                #print("current position {} action {}".format(self.State.state, action))
-                # by taking the action, it reaches the next state
-                #self.State = self.takeAction(action)
-                # mark is end
-                self.State.isEndFunc()
-                #print("nxt state", self.State.state)
-                #print("---------------------")
+                act = random.choice(self.actions[self.state])
+                    
+            while self.state != self.end:
+                next_state = self.n_s[self.state][act]
+                random_value = random.random()
+                if random_value > self.epsilon:                        
+                    Max_reward = [-999, -999, -999, -999]
+                    for M in self.actions[self.state]:        
+                        Max_reward[M] = (self.Q_values[self.state][M])
+                    next_act = np.argmax(Max_reward)       
+                else:
+                    next_act = random.choice(self.actions[self.state])
+     
 
+                round_reward = round_reward + self.reward[self.state][act]
+
+                # Update Q_Value_current_state_and_action_taken = Q_Value_current_state_and_action_taken + Discounted Reward [reward_of_action_taken + (discount_factor x max_q_value - Q_value_of_action_taken_in_current_position)]
+                self.Q_values[self.state][act] = self.Q_values[self.state][act] + self.lr * (self.reward[self.state][act] + self.gamma * self.Q_values[next_state][next_act] - self.Q_values[self.state][act])
+                #print("Taking action ", act, " to state ", next_state.state)
+                # Save current position in Path list and update current_state
+
+                self.state = next_state
+                act = next_act
+                print("Next episode...")
+
+            self.allrewards.append(round_reward)
+            if self.epsilon > 0: self.epsilon -= self.e_degradation
 
 
 if __name__ == "__main__":
-
-    print("QLearning")
+    print("QLearning Training...")
     ag = Agent()
-    ag.play(NUM_EPISODES)
+    ag.play_q_learning(NUM_EPISODES)
     rewards1 = ag.allrewards
     
-    print("Sarsa")
-    ag = Agent(method="Sarsa")
-    ag.play(NUM_EPISODES)
+    print("Sarsa Training...")
+    ag = Agent(gamma=0.7, lr=0.7)
+    ag.play_sarsa_learning(NUM_EPISODES)
     rewards2 = ag.allrewards
 
     plt.figure()
-    plt.plot(range(0,NUM_EPISODES), rewards1, label="QLearning")
-    plt.plot(range(0,NUM_EPISODES), rewards2, label="Sarsa")
+    plt.plot(range(NUM_EPISODES), rewards1, label="QLearning")
+    plt.plot(range(NUM_EPISODES), rewards2, label="Sarsa")
     plt.title("Reward values per episode")
     plt.xlabel("Episode")
     plt.ylabel("Reward")
