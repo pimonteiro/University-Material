@@ -27,13 +27,12 @@ public class Ex4 {
                 .mapToPair(l -> new Tuple2<>(l[0],l[2]));
 
         JavaPairRDD<String, Tuple2<Double,String>> joined = ratings.join(movies);
-        List<Tuple2<String,Tuple2<Double,String>>> res = joined.collect();
+        JavaPairRDD<Double,String> lst = joined.mapToPair(t -> new Tuple2<>(t._2._1,t._2._2))
+                .sortByKey();
+        List<Tuple2<Double, String>> res = lst.collect();
 
-        List<Tuple2<String,Double>> sorted = res.stream().sorted((t1,t2) -> t2._2._1.compareTo(t1._2._1))
-                .map(t -> new Tuple2<String,Double>(t._2._2,t._2._1)).collect(Collectors.toList());
-
-        for(Tuple2<String,Double> a : sorted){
-            System.out.println(a._1 + " -> " + a._2);
+        for(Tuple2<Double,String> a : res){
+            System.out.println(a._2 + " -> " + a._1);
         }
 
 
