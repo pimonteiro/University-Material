@@ -9,6 +9,7 @@ public class Ex1 {
                 .setMaster("local[2]")
                 .setAppName("simplestream");
 
+        /*
         JavaStreamingContext jsc = JavaStreamingContext.getOrCreate("/tmp/stream", () -> {
             JavaStreamingContext sc = new JavaStreamingContext(conf, Durations.seconds(60));
             sc.socketTextStream("localhost", 12345)
@@ -17,6 +18,12 @@ public class Ex1 {
             sc.checkpoint("/tmp/stream");
             return sc;
         });
+        */
+        JavaStreamingContext jsc = new JavaStreamingContext(conf, Durations.seconds(60));
+        jsc.socketTextStream("localhost", 12345)
+                .foreachRDD(rdd -> {
+                    rdd.saveAsTextFile("/Users/JoaoPimentel/desktop/4ANO/GGCD/Resolucoes/G7");
+                });
 
         jsc.start();
         jsc.awaitTermination();

@@ -8,6 +8,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Tuple2;
 
 import java.util.List;
+import java.util.stream.StreamSupport;
 
 public class Ex2 {
     public static void main(String[] args) throws InterruptedException {
@@ -20,13 +21,17 @@ public class Ex2 {
                 .window(Durations.minutes(10),Durations.seconds(60))
                 .map(t -> t.split("\t"))
                 .mapToPair(t -> new Tuple2<>(t[0],Double.parseDouble(t[1])))
-                .reduce((p1,p2) -> new Tuple2<>(p1._1,p1._2 + p2._2))
+                .groupByKey()
+                .mapToPair(p -> new Tuple2<>(
+                        StreamSupport.stream(p._2.spliterator(),false)
+                        .mapToDouble(a -> a)
+                        .average()
+                        .getAsDouble(), p._1
+                ))
                 .foreachRDD(rdd -> {
-                    List<Tuple2<String,Double>> lst = rdd.sortBy(t -> t._2,false,1).collect();
-                    lst = lst.subList(0,Math.min(3,lst.size()));
-                    System.out.println(lst);
+                    List<Tuple2<Double, String>> lst = rdd.sortByKey(false).take(3);
+                    System.out.println(lst.toString());
                 });
-
 
         sc.start();
         sc.awaitTermination();

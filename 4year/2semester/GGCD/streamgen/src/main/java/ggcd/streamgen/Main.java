@@ -31,7 +31,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        String name = args.length<1 ? "title.ratings.tsv.gz" : args[0];
+        String name = args.length<1 ? "hdfs://namenode:9000/input/title.ratings.tsv.gz" : args[0];
 
         double rate = args.length<2 ? 120 : Double.parseDouble(args[1]);
 
