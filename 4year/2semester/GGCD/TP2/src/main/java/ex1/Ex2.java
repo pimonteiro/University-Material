@@ -28,14 +28,9 @@ public class Ex2 {
         jsc.socketTextStream("localhost", 12345)
                 .window(Durations.minutes(10), Durations.seconds(60))
                 .map(t -> t.split("\t"))
-                .mapToPair(t -> new Tuple2<>(t[0],Double.parseDouble(t[1])))
-                .groupByKey()
-                .mapToPair(p -> new Tuple2<>(p._1,
-                        StreamSupport.stream(p._2.spliterator(),false)
-                                .mapToDouble(a -> a)
-                                .average()
-                                .getAsDouble()
-                ))
+                .mapToPair(t -> new Tuple2<>(t[0],new Tuple2<>(Double.parseDouble(t[1]),1)))
+                .reduceByKey((t1,t2) -> new Tuple2<>(t1._1 + t2._1, t1._2 + t2._2))
+                .mapToPair(t -> new Tuple2<>(t._1,t._2._1 / t._2._2))
                 .foreachRDD(rdd -> {
                     JavaPairRDD<String, Double> tmp = rdd
                             .mapToPair(t -> new Tuple2<>(t._1,t._2))

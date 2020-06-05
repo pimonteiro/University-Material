@@ -5,6 +5,7 @@ import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Ex1 {
     public static void main(String[] args) throws InterruptedException {            //DONE
@@ -14,7 +15,7 @@ public class Ex1 {
 
         JavaStreamingContext jsc = new JavaStreamingContext(conf, Durations.seconds(60));
         jsc.socketTextStream("localhost", 12345)
-                .transform((rdd,time) -> rdd.map(t -> t.concat("\t" + time)))
+                .transform((rdd,time) -> rdd.map(t -> t.concat("\t" + (new Date(time.milliseconds())))))
                 .window(Durations.seconds(60*10), Durations.seconds(60*10))
                 .foreachRDD(rdd -> {
                     LocalDateTime time = LocalDateTime.now();
